@@ -1,0 +1,107 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Layout */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header-left {
+    flex: 0 0 120px;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.header-right {
+    margin-left: 20px;
+}
+
+.header-right h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.contact-info a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 10px 0;
+    background-color: #e4e4e4;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Sections */
+section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #e0e0e0;
+}
+
+/* Skills List */
+.skills-list {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+/* Buttons */
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
