@@ -169,6 +169,37 @@ section ul li {
     position: absolute;
     left: 0;
 }
+#oop-java {
+    margin-bottom: 20px;
+}
+
+#oop-java h2 {
+    font-size: 1.8rem;
+    color: #008080;
+    border-bottom: 2px solid #008080;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+#oop-java p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#oop-java ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+#oop-java ul li {
+    margin-bottom: 8px;
+    padding-left: 10px;
+    border-left: 2px solid #008080;
+    font-size: 1rem;
+    color: #555;
+}
+
 
 footer {
     text-align: center;
