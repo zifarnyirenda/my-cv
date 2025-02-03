@@ -19,6 +19,7 @@ body {
     padding: 0;
     overflow: hidden; 
     min-height: 100vh;
+    font-size: 16px;
      
 }
 
@@ -199,7 +200,10 @@ footer {
     margin-top: 20px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 14px; 
+    }
     .cv-container {
         flex-direction: column;  
         width: 95%;
