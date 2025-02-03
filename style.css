@@ -207,6 +207,8 @@ footer {
     }
 
     .left-panel, .right-panel {
+        overflow-y: auto;    
+        max-height: 100vh; 
         width: 100%;  
         text-align: center; 
     }
