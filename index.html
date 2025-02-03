@@ -1,16 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>  
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4VP7V93DWV"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-4VP7V93DWV');
-</script>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zifar Nyirenda - Student CV</title>
@@ -19,106 +10,88 @@
 </head>
 
 <body>
-    <div class="container">
-        <header class="header">
-            <div class="header-left">
-                <img src="1728581319237.jpg" alt="Zifar Nyirenda" class="profile-img">
+    <div class="cv-container">
+        <!-- Left Panel -->
+        <div class="left-panel">
+            <img src="1728581319237.jpg" alt="Zifar Nyirenda" class="profile-img">
+            <h1>Zifar Nyirenda</h1>
+            <p class="subtitle">Web Developer | Final-Year Student</p>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:zifarchishalanyirenda@gmail.com">zifarchishalanyirenda@gmail.com</a></p>
+                <p>Phone: +212 658 815357</p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/zifar-nyirenda" target="_blank">Zifar Nyirenda</a></p>
+                <button class="contact-btn" onclick="contactMe()">Contact Me</button>
             </div>
-            <div class="header-right">
-                <h1>Zifar Nyirenda</h1>
-                <p class="subtitle">Web Developer | Final-Year Information Systems and Digital Transformation Student</p>
-                <div class="contact-info">
-                    <p>Email: <a href="mailto:zifarchishalanyirenda@gmail.com">zifarchishalanyirenda@gmail.com</a></p>
-                    <p>Phone: +212 658 815357</p>
-                    <p>LinkedIn: <a id="linkedin-btn" href="http://linkedin.com/in/zifar-nyirenda-086b1a237" target="_blank">Zifar Nyirenda</a></p>
-
-                    <button class="contact-btn" onclick="contactMe()">Contact Me</button>
+            <div class="languages-section">
+                <h2>Languages</h2>
+                <div class="language">
+                    <span>English(Native)</span>
+                    <div class="proficiency-bar">
+                        <div class="proficiency native"></div>
+                    </div>
+                </div>
+                <div class="language">
+                    <span>French(Intermediate)</span>
+                    <div class="proficiency-bar">
+                        <div class="proficiency intermediate"></div>
+                    </div>
                 </div>
             </div>
-        </header>
+            <div class="section">
+                <h2>Interests</h2>
+                <ul>
+                    <li>Technology & Innovation</li>
+                    <li>Digital Transformation</li>
+                    <li>Leadership Development</li>
+                    <li>Community Tech Advocacy</li>
+                </ul>
+            </div>
+        </div>
 
-        
-        <section id="profile" class="profile-section">
-            <h2>Profile</h2>
-            <p>I am a final-year Information Systems and Digital Transformation student at the Faculty of Science and Technology in Settat. My expertise spans web development, database management, Object-oriented programming, and digital marketing, with a strong focus on creating impactful solutions.</p>
-        </section>
+        <!-- Right Panel -->
+        <div class="right-panel">
+            <div class="section">
+                <h2>Profile</h2>
+                <p>Final-year Information Systems and Digital Transformation student at the Faculty of Science and Technology in Settat. Skilled in web development, database management, and digital marketing. Passionate, hardworking, and always ready to get the job done.</p>
+            </div>
 
-        <section id="education">
-            <h2>Education</h2>
-            <ul>
-                <li>
-                    <h3>Bachelor of Science in Information Systems and Digital Transformation</h3>
-                    <p>Faculty of Science and Technology, Settat | Expected Graduation: 2025</p>
-                </li>
-                <li>
-                    <h3>University Diploma in Scientific and Technical Studies</h3>
-                    <p>Faculty of Science and Technology, Settat | Electrical and Mechanical Engineering | 2024</p>
-                </li>
-                <li>
-                    <h3>High School Diploma</h3>
-                    <p>Canisius Secondary School, Zambia | 2015 – 2019</p>
-                    <p>Role: Prefect | 2018: Participant in the Pan African Youth Leadership Program, USA.</p>
-                </li>
-            </ul>
-        </section>
+            <div class="section">
+                <h2>Education</h2>
+                <ul>
+                    <li><strong>BSc in Information Systems and Digital Transformation</strong><br>Faculty of Science and Technology, Settat | Expected 2025</li>
+                    <li><strong>University Diploma in Scientific and Technical Studies</strong><br>Electrical and Mechanical Engineering | 2024</li>
+                    <li><strong>High School Diploma</strong><br>Canisius Secondary School, Zambia | 2015 – 2019<br>Prefect | 2018: Pan African Youth Leadership Program, USA</li>
+                </ul>
+            </div>
 
-        
-        <section id="skills">
-    <h2>Skills</h2>
-    <ul class="skills-list">
-        <li><i class="icon">💻</i> Web Development: HTML5, CSS3, JavaScript, PHP</li>
+            <div class="section">
+                <h2>Skills</h2>
+                <ul class="skills-list">
+                    <li><i class="icon">💻</i> Web Development: HTML5, CSS3, JavaScript, PHP</li>
         <li><i class="icon">⚙️</i> Frameworks & Tools: React.js, Odoo, HubSpot</li>
         <li><i class="icon">🗄️</i> Database Management: SQL, MySQL</li>
         <li><i class="icon">📊</i> Digital Marketing & Analytics</li>
         <li><i class="icon">👥</i> Leadership & Team Collaboration</li>
         <li><i class="icon">☕</i> Object-Oriented Programming (OOP) with Java</li> 
-    </ul>
-</section>
+                </ul>
+            </div>
 
-       <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-        <h3>Freelance Web Developer</h3>
-        <ul>
-            <li>Developed dynamic websites using HTML, CSS, JavaScript, PHP, and SQL.</li>
-            <li>Customized Odoo modules to streamline business operations.</li>
-            <li>Integrated HubSpot CRM solutions to enhance client engagement and marketing.</li>
-            <li>Collaborated with teams to design user-friendly interfaces and ensure project success.</li>
-        </ul>
-    </div>
-    <div class="project">
-        <h3>Object-Oriented Programming (OOP) with Java</h3>
-        <ul>
-            <li>Implemented core OOP principles (Inheritance, Polymorphism, Encapsulation, Abstraction) to develop modular, maintainable, and efficient Java applications.</li>
-            <li>Built various applications using Java, including a task management system and a project management platform for my university coursework.</li>
-            <li>Utilized JavaFX for building graphical user interfaces (GUIs) for enhanced user experience.</li>
-            <li>Developed strong problem-solving skills through algorithm design, code optimization, and debugging.</li>
-        </ul>
-    </div>
-</section>
-
-        <section id="interests">
-            <h2>Interests</h2>
-            <ul>
-                <li>Technology & Innovation</li>
-                <li>Digital Transformation</li>
-                <li>Leadership Development</li>
-                <li>Community Tech Advocacy</li>
-            </ul>
-        </section>
-        
-        <section id="languages">
-            <h2>Languages</h2>
-            <ul>
-                <li>English: Native</li>
-                <li>French: Intermediate</li>
-            </ul>
-        </section>
-        
-        <footer>
-            <p>&copy; 2024 Zifar Nyirenda | All Rights Reserved</p>
-        </footer>
+            <div class="section">
+                <h2>Projects</h2>
+                <ul>
+                    <li><strong>Freelance Web Developer:</strong> Developed dynamic websites, customized Odoo modules, integrated HubSpot CRM, and collaborated on user-friendly designs.</li>
+                    <li><strong>Digital Marketing:</strong> Created a Facebook business page, designed cover photos, implemented digital marketing strategies, and integrated Google Analytics to boost online presence.</li>
+                    <li><strong>Object-Oriented Programming (OOP) with Java:</strong> Applied OOP principles (Inheritance, Polymorphism, Encapsulation, Abstraction) to create modular and efficient Java applications. Built task and project management systems for university coursework, utilizing JavaFX for enhanced user interfaces and developing strong problem-solving skills through algorithm design and optimization.</li>
+                </ul>
+            </div>
+            <footer>
+                &copy; 2025 Zifar Nyirenda | All Rights Reserved
+            </footer>
+        </div>
     </div>
 </body>
+
+</html>
+
 
 </html>
