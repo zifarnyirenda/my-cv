@@ -17,7 +17,8 @@ body {
     align-items: center;
     margin: 0;
     padding: 0;
-    overflow: hidden;  
+    overflow: hidden; 
+     
 }
 
 .cv-container {
@@ -141,10 +142,11 @@ body {
 
 .section h2 {
     font-size: 1.5rem;
-    color: #008080;
-    border-bottom: 2px solid #008080;
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
     margin-bottom: 10px;
     padding-bottom: 5px;
+    text-align: center;
 }
 
 .skills-list li:hover {
@@ -258,4 +260,3 @@ footer {
         font-size: 0.6rem;
     }
 }
-
