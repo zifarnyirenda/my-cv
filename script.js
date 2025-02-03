@@ -3,7 +3,7 @@ function contactMe() {
 }
 
 
-document.getElementById('linkedin-btn').href = "https://www.linkedin.com/in/zifar-nyirenda";
+document.getElementById('linkedin-btn').href = "https://www.linkedin.com/in/zifar-nyirenda-086b1a237/";
 
 
 document.addEventListener('DOMContentLoaded', () => {
