@@ -4,15 +4,20 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;  
+    overflow: hidden;  
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0; 
-    overflow: hidden; 
+    margin: 0;
+    padding: 0;
+    overflow: hidden;  
 }
 
 .cv-container {
@@ -23,11 +28,15 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    flex-direction: row; 
+    flex-direction: row;
+    margin: 0 auto;
+    height: 100%; 
+    flex-wrap: wrap;
 }
 
 .left-panel, .right-panel {
     padding: 20px;
+    height: 100%; 
 }
 
 .left-panel {
@@ -82,7 +91,7 @@ body {
 }
 
 .languages-section h2 {
-   font-size: 1.5rem;
+    font-size: 1.5rem;
     color: #ffffff;
     border-bottom: 2px solid #ffffff;
     margin-bottom: 10px;
@@ -119,18 +128,6 @@ body {
 
 .intermediate {
     width: 60%;
-}
-
-.left-panel .section ul li {
-    margin-bottom: 10px;
-}
-
-.left-panel .section h2 {
-    font-size: 1.5rem;
-    color: #ffffff;
-    border-bottom: 2px solid #ffffff;
-    margin-bottom: 10px;
-    padding-bottom: 5px;
 }
 
 .right-panel {
@@ -182,3 +179,83 @@ footer {
     color: #777;
     margin-top: 20px;
 }
+
+@media only screen and (max-width: 768px) {
+    .cv-container {
+        flex-direction: column;  
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .left-panel, .right-panel {
+        width: 100%;  
+        padding: 15px;
+    }
+
+    .profile-img {
+        width: 120px;  
+        height: 120px;
+    }
+
+    .left-panel h1 {
+        font-size: 1.5rem;
+    }
+
+    .left-panel .subtitle {
+        font-size: 0.9rem;
+    }
+
+    .right-panel {
+        padding: 15px;
+    }
+
+    .section h2 {
+        font-size: 1.3rem;
+    }
+
+    .skills-list li {
+        flex: 1 1 100%;  
+    }
+
+    footer {
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .cv-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .profile-img {
+        width: 100px;  
+        height: 100px;
+    }
+
+    .left-panel h1 {
+        font-size: 1.3rem;
+    }
+
+    .left-panel .subtitle {
+        font-size: 0.8rem;
+    }
+
+    .languages-section h2 {
+        font-size: 1.2rem;
+    }
+
+    .right-panel {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .section h2 {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        font-size: 0.6rem;
+    }
+}
+
