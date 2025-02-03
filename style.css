@@ -148,6 +148,12 @@ body {
     padding-bottom: 5px;
     text-align: center;
 }
+.interests-section ul li::before {
+    content: "➤";  /* Custom arrow icon */
+    color: #008080;  /* Match your CV theme color */
+    margin-right: 10px;  /* Space between icon and text */
+    font-weight: bold;
+}
 
 .skills-list li:hover {
     transform: translateY(-5px);
