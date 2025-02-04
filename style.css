@@ -32,6 +32,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     height: 100vh;  
+    margin: 0 auto;
 }
 
 
@@ -213,7 +214,7 @@ footer {
 
    .left-panel, .right-panel {
     padding: 20px;
-    height: 100vh;
+    height: 100%;
     overflow-y: auto;
 }
 
