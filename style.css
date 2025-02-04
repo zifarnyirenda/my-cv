@@ -23,17 +23,16 @@ body {
 
 .cv-container {
     display: flex;
-    flex-wrap: nowrap;  
+    flex-wrap: wrap;
     justify-content: flex-start;
-    align-items: stretch;  
+    align-items: flex-start;
     width: 100%;
     max-width: 1000px;
     background: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    height: 100vh;  
-    margin: 0 auto;
-}
+    min-height: 100vh; 
+    padding-bottom: 20px;
 
 
 .left-panel, .right-panel {
@@ -229,4 +228,46 @@ footer {
     width: 65%;
     color: #333333;
 }
+@media only screen and (max-width: 480px) {
+    .cv-container {
+        width: 100%;
+        padding: 10px;
+    }
 
+    .profile-img {
+        width: 100px;  
+        height: 100px;
+    }
+.contact-btn {
+        padding: 10px 20px;      
+        font-size: 0.9rem;
+    }
+    .left-panel h1 {
+        font-size: 1.3rem;
+    }
+
+    .left-panel .subtitle {
+        font-size: 0.8rem;
+    }
+
+    .languages-section h2 {
+        font-size: 1.2rem;
+    }
+    .profile-img {
+    max-width: 100%;            
+    height: auto;
+}
+
+    .right-panel {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .section h2 {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        font-size: 0.6rem;
+    }
+}
