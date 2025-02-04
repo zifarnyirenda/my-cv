@@ -267,6 +267,45 @@ footer {
         font-size: 1.2rem;
     }
 
+@media only screen and (max-width: 480px) {
+    .cv-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .profile-img {
+        width: 100px;  
+        height: 100px;
+    }
+.contact-btn {
+        padding: 10px 20px;      
+        font-size: 0.9rem;
+    }
+    .left-panel h1 {
+        font-size: 1.3rem;
+    }
+
+    .left-panel .subtitle {
+        font-size: 0.8rem;
+    }
+
+    .languages-section h2 {
+        font-size: 1.2rem;
+    }
+    .profile-img {
+    max-width: 100%;            
+    height: auto;
+}
+
+    .right-panel {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .section h2 {
+        font-size: 1.2rem;
+    }
+
     footer {
         font-size: 0.6rem;
     }
