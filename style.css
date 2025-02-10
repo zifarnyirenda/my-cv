@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -6,58 +5,46 @@
 }
 
 html, body {
-    height: 100%;  
-    overflow: hidden;  
-}
-
-body {
+    height: 100%;
     font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    overflow: hidden; 
-     
+    color: #333;
 }
 
 .cv-container {
     display: flex;
-    width: 100%;
     max-width: 1000px;
-    background: #ffffff;
+    margin: 20px auto;
+    background: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     flex-direction: row;
-    margin: 0 auto;
-    height: 100%; 
-    flex-wrap: wrap;
-}
-
-.left-panel, .right-panel {
-    padding: 20px;
-    height: 100%; 
 }
 
 .left-panel {
     width: 35%;
     background-color: #008080;
-    color: #ffffff;
+    color: #fff;
+    padding: 20px;
     text-align: center;
+}
+
+.right-panel {
+    width: 65%;
+    padding: 20px;
+    color: #333;
 }
 
 .profile-img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 4px solid #ffffff;
-    object-fit: cover;
+    border: 4px solid #fff;
     margin-bottom: 20px;
 }
 
-.left-panel h1 {
+h1 {
     font-size: 1.8rem;
     margin-bottom: 5px;
 }
@@ -70,32 +57,33 @@ body {
 .contact-info p, .contact-info a {
     font-size: 0.9rem;
     margin-bottom: 10px;
-    color: #ffffff;
+    color: #fff;
     text-decoration: none;
 }
 
 .contact-btn {
-    margin: -5px auto 0;
-    background-color: #ffffff;
+    background-color: #fff;
     color: #008080;
-    padding: 12px 25px;
+    padding: 10px 20px;
     border: none;
     border-radius: 25px;
     cursor: pointer;
     font-size: 1rem;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
 }
 
-.languages-section {
+.contact-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.languages-section, .interests-section {
     margin-top: 30px;
     text-align: left;
 }
 
-.languages-section h2 {
+.languages-section h2, .interests-section h2 {
     font-size: 1.5rem;
-    color: #ffffff;
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid #fff;
     margin-bottom: 10px;
     padding-bottom: 5px;
     text-align: center;
@@ -105,13 +93,9 @@ body {
     margin-bottom: 15px;
 }
 
-.language span {
-    font-size: 1rem;
-}
-
 .proficiency-bar {
     width: 100%;
-    background-color: #ffffff;
+    background-color: #fff;
     border-radius: 10px;
     height: 10px;
     margin-top: 5px;
@@ -132,41 +116,25 @@ body {
     width: 60%;
 }
 
-.right-panel {
-    width: 65%;
-    color: #333333;
+.interests-section ul {
+    list-style-type: none;
+}
+
+.interests-section ul li::before {
+    content: "➤";
+    color: #008080;
+    margin-right: 10px;
 }
 
 .section {
     margin-bottom: 20px;
 }
 
-.interests-section h2 {
+.section h2 {
     font-size: 1.5rem;
-    color: #ffffff;
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid #008080;
     margin-bottom: 10px;
     padding-bottom: 5px;
-    text-align: center;
-}
-.interests-section ul li::before {
-    content: "➤";  /* Custom arrow icon */
-    color: #008080;  /* Match your CV theme color */
-    margin-right: 10px;  /* Space between icon and text */
-    font-weight: bold;
-}
-
-.skills-list li:hover {
-    transform: translateY(-5px);
-}
-
-.section ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.section ul li {
-    margin-bottom: 10px;
 }
 
 .skills-list {
@@ -180,6 +148,11 @@ body {
     padding: 10px;
     border-radius: 5px;
     flex: 1 1 calc(50% - 10px);
+    transition: transform 0.3s ease;
+}
+
+.skills-list li:hover {
+    transform: translateY(-5px);
 }
 
 footer {
@@ -189,33 +162,26 @@ footer {
     margin-top: 20px;
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .cv-container {
-        flex-direction: column;  
-        width: 100%;
-        margin: 0 auto;
+        flex-direction: column;
     }
 
     .left-panel, .right-panel {
-        width: 100%;  
-        padding: 15px;
+        width: 100%;
     }
 
     .profile-img {
-        width: 120px;  
+        width: 120px;
         height: 120px;
     }
 
-    .left-panel h1 {
+    h1 {
         font-size: 1.5rem;
     }
 
-    .left-panel .subtitle {
+    .subtitle {
         font-size: 0.9rem;
-    }
-
-    .right-panel {
-        padding: 15px;
     }
 
     .section h2 {
@@ -223,48 +189,25 @@ footer {
     }
 
     .skills-list li {
-        flex: 1 1 100%;  
-    }
-
-    footer {
-        font-size: 0.7rem;
+        flex: 1 1 100%;
     }
 }
 
-@media only screen and (max-width: 480px) {
-    .cv-container {
-        width: 100%;
-        padding: 10px;
-    }
-
+@media (max-width: 480px) {
     .profile-img {
-        width: 100px;  
+        width: 100px;
         height: 100px;
     }
 
-    .left-panel h1 {
+    h1 {
         font-size: 1.3rem;
     }
 
-    .left-panel .subtitle {
+    .subtitle {
         font-size: 0.8rem;
-    }
-
-    .languages-section h2 {
-        font-size: 1.2rem;
-    }
-
-    .right-panel {
-        width: 100%;
-        padding: 10px;
     }
 
     .section h2 {
         font-size: 1.2rem;
     }
-
-    footer {
-        font-size: 0.6rem;
-    }
 }
-
