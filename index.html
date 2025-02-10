@@ -1,91 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zifar Nyirenda - Student CV</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-</head>
-<body>
-    <div class="cv-container">
-        <!-- Left Panel -->
-        <div class="left-panel">
-            <img src="1728581319237.jpg" alt="Zifar Nyirenda" class="profile-img">
-            <h1>Zifar Nyirenda</h1>
-            <p class="subtitle">Web Developer | Final-Year Student</p>
-            <div class="contact-info">
-                <p>Email: <a href="mailto:zifarchishalanyirenda@gmail.com">zifarchishalanyirenda@gmail.com</a></p>
-                <p>Phone: +212 658 815357</p>
-                <p>LinkedIn: <a id="linkedin-btn" href="https://www.linkedin.com/in/zifar-nyirenda" target="_blank" aria-label="LinkedIn Profile">Zifar Nyirenda</a></p>
-                <button class="contact-btn" onclick="contactMe()" aria-label="Contact Me">Contact Me</button>
-            </div>
-            <div class="languages-section">
-                <h2>Languages</h2>
-                <div class="language">
-                    <span>English (Native)</span>
-                    <div class="proficiency-bar">
-                        <div class="proficiency native"></div>
-                    </div>
-                </div>
-                <div class="language">
-                    <span>French (Intermediate)</span>
-                    <div class="proficiency-bar">
-                        <div class="proficiency intermediate"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="interests-section">
-                <h2>Interests</h2>
-                <ul>
-                    <li>Technology & Innovation</li>
-                    <li>Digital Transformation</li>
-                    <li>Leadership Development</li>
-                    <li>Community Tech Advocacy</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Right Panel -->
-        <div class="right-panel">
-            <div class="section">
-                <h2>Profile</h2>
-                <p>Final-year Information Systems and Digital Transformation student at the Faculty of Science and Technology in Settat. Skilled in web development, database management, and digital marketing. Passionate, hardworking, and always ready to get the job done.</p>
-            </div>
-
-            <div class="section">
-                <h2>Education</h2>
-                <ul>
-                    <li><strong>BSc in Information Systems and Digital Transformation</strong><br>Faculty of Science and Technology, Settat | Expected 2025</li>
-                    <li><strong>University Diploma in Scientific and Technical Studies</strong><br>Electrical and Mechanical Engineering | 2024</li>
-                    <li><strong>High School Diploma</strong><br>Canisius Secondary School, Zambia | 2015 – 2019<br>Prefect | 2018: Pan African Youth Leadership Program, USA</li>
-                </ul>
-            </div>
-
-            <div class="section">
-                <h2>Skills</h2>
-                <ul class="skills-list">
-                    <li><i class="icon">💻</i> Web Development: HTML5, CSS3, JavaScript, PHP</li>
-                    <li><i class="icon">⚙️</i> Frameworks & Tools: React.js, Odoo, HubSpot</li>
-                    <li><i class="icon">🗄️</i> Database Management: SQL, MySQL</li>
-                    <li><i class="icon">📊</i> Digital Marketing & Analytics</li>
-                    <li><i class="icon">👥</i> Leadership & Team Collaboration</li>
-                    <li><i class="icon">☕</i> Object-Oriented Programming (OOP) with Java</li>
-                </ul>
-            </div>
-
-            <div class="section">
-                <h2>Projects</h2>
-                <ul>
-                    <li><strong>Freelance Web Developer:</strong> Developed dynamic websites, customized Odoo modules, integrated HubSpot CRM, and collaborated on user-friendly designs.</li>
-                    <li><strong>Digital Marketing:</strong> Created a Facebook business page, designed cover photos, implemented digital marketing strategies, and integrated Google Analytics to boost online presence.</li>
-                    <li><strong>Object-Oriented Programming (OOP) with Java:</strong> Applied OOP principles (Inheritance, Polymorphism, Encapsulation, Abstraction) to create modular and efficient Java applications. Built task and project management systems for university coursework, utilizing JavaFX for enhanced user interfaces and developing strong problem-solving skills through algorithm design and optimization.</li>
-                </ul>
-            </div>
-            <footer>
-                &copy; 2025 Zifar Nyirenda | All Rights Reserved
-            </footer>
-        </div>
+<!-- Add this inside the .right-panel div, after the Projects section -->
+<div class="section">
+    <h2>Professional Experience</h2>
+    <div class="experience-item">
+        <h3>Junior Technician, Bisoft Business Systems</h3>
+        <p class="experience-duration">Lusaka, Zambia | January 2020 - December 2020</p>
+        <ul>
+            <li>Gained hands-on experience in configuring and maintaining point-of-sale systems and weighing scales for retail and hospitality businesses.</li>
+            <li>Worked extensively with Semper, AidePOS software, and Ishida scales, ensuring seamless integration and functionality.</li>
+            <li>Developed strong troubleshooting skills, supported client installations, and contributed to optimizing system performance for diverse business environments.</li>
+            <li>Collaborated with team members on projects, resulting in streamlined processes and increased productivity.</li>
+            <li>Performed quality assurance checks on completed tasks, ensuring compliance with industry standards and regulations.</li>
+        </ul>
     </div>
-</body>
-</html>
+</div>
+
+<div class="section">
+    <h2>Accomplishments</h2>
+    <div class="accomplishment-item">
+        <h3>Pan African Youth Leadership Program</h3>
+        <p class="accomplishment-duration">United States — 2018</p>
+        <ul>
+            <li>Selected to participate in an international leadership exchange program focused on civic engagement, cultural exchange, and community development.</li>
+            <li>Collaborated with youth leaders from across Africa and the U.S., enhancing skills in leadership, teamwork, and cross-cultural communication.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="section">
+    <h2>References</h2>
+    <div class="reference-item">
+        <h3>Professor Hajar Khallouki</h3>
+        <p>Web Development & Digital Marketing Lecturer</p>
+        <p>Faculty of Science and Technology, Settat</p>
+        <p>Email: <a href="mailto:hajar1khallouki@gmail.com">hajar1khallouki@gmail.com</a></p>
+    </div>
+    <div class="reference-item">
+        <h3>Professor Abdessamad Jarrar</h3>
+        <p>Database Lecturer</p>
+        <p>Faculty of Science and Technology, Settat</p>
+        <p>Email: <a href="mailto:Abdessamad.jarrar@gmail.com">Abdessamad.jarrar@gmail.com</a></p>
+    </div>
+</div>
